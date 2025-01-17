@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Raden Mohamad Wildan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero animate-fade-in">
+        <h1>Raden Mohamad Wildan</h1>
+        <p>Professional IT Enthusiast - IoT, Web Development, and Graphic Design</p>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profil Section -->
+    <section id="profil" class="profil animate-slide-in">
+        <img src="assets/profile.png" alt="Foto Profil" class="profile-img">
+        <p>Saya adalah seorang IT professional dengan pengalaman dalam pengembangan IoT, desain web, dan pengelolaan proyek teknologi. Saya siap membawa inovasi untuk setiap tantangan.</p>
+    </section>
+
+    <!-- Proyek Section -->
+    <section id="proyek" class="proyek">
+        <h2 class="animate-fade-in">Proyek</h2>
+
+        <!-- Filter -->
+        <div class="filter-container">
+            <button class="filter-btn" data-category="all">Semua</button>
+            <button class="filter-btn" data-category="iot">IoT</button>
+            <button class="filter-btn" data-category="web">Web</button>
+            <button class="filter-btn" data-category="mobile">Mobile</button>
+            <button class="filter-btn" data-category="design">Desain Gambar</button>
+        </div>
+        <div class="gallery">
+            <!-- Example Card -->
+            <div class="card animate-hover-scale" data-category="iot">
+                <img src="iot_project.jpg" alt="Proyek IoT">
+                <h3>IoT Lockdoor</h3>
+                <p>Proyek keamanan berbasis sensor RFID.</p>
+                <button class="view-btn" data-project="IoT Lockdoor">View Details</button>
+            </div>
+            <div class="card animate-hover-scale" data-category="web">
+                <img src="website.jpg" alt="Website Design">
+                <h3>Desain Web</h3>
+                <p>Merancang situs penyimpanan data leader dan artikel.</p>
+                <button class="view-btn" data-project="Desain Web">View Details</button>
+            </div>
+            <div class="card animate-hover-scale" data-category="mobile">
+                <img src="app.jpg" alt="Mobile App Development">
+                <h3>Aplikasi Mobile</h3>
+                <p>Pengembangan aplikasi mobile untuk pengelolaan tugas.</p>
+                <button class="view-btn" data-project="Aplikasi Mobile">View Details</button>
+            </div>
+            <div class="card animate-hover-scale" data-category="design">
+                <img src="design_project.jpg" alt="Desain Gambar">
+                <h3>Desain Gambar</h3>
+                <p>Proyek desain grafis untuk berbagai keperluan.</p>
+                <button class="view-btn" data-project="Desain Gambar">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a id="modal-link" href="#" target="_blank" class="modal-link">Kunjungi Proyek</a>
+        </div>
+    </div>
+    
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="testimoni">
+        <h2>Testimoni</h2>
+        <div class="carousel" id="carousel">
+            <div class="carousel-item active">
+                <p>"Wildan adalah seorang developer yang sangat berbakat. Proyek IoT kami berjalan sukses berkat kontribusinya."</p>
+                <h4>- Klien IoT</h4>
+            </div>
+            <div class="carousel-item">
+                <p>"Situs web yang dirancang oleh Wildan sangat profesional dan fungsional, membantu kami mengelola data lebih efektif."</p>
+                <h4>- Klien Web</h4>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="prev-btn">❮</button>
+            <button class="next-btn">❯</button>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="kontak">
+        <h2 class="animate-scale-up">Kontak</h2>
+        <div class="kontak-container">
+            <form action="https://formsubmit.co/radenmohamadwildan@gmail.com" method="POST" class="animate-scale-up">
+                <input type="text" name="name" placeholder="Nama Anda" required pattern="[A-Za-z\s]+" title="Hanya huruf diperbolehkan.">
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <textarea name="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <div class="sosial-media">
+                <h3>Hubungi Saya</h3>
+                <div class="social-icons">
+                    <a href="mailto:radenmohamadwildan@gmail.com" target="_blank" class="icon">
+                        <img src="assets/email.png" alt="Email">
+                    </a>
+                    <a href="https://github.com/radenwildan" target="_blank" class="icon">
+                        <img src="assets/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://linkedin.com/in/radenwildan" target="_blank" class="icon">
+                        <img src="assets/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" class="icon">
+                        <img src="assets/instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="animate-fade-in">
+        <p>&copy; 2024 Raden Mohamad Wildan</p>
+    </footer>
+</body>
+</html>
