@@ -5,12 +5,8 @@ const projects = {
         link: "https://example.com/iot-lockdoor"
     },
     "Desain Web": {
-        description: "Merancang situs penyimpanan data leader dan artikel.",
-        link: "https://example.com/web-design"
-    },
-    "Aplikasi Mobile": {
-        description: "Pengembangan aplikasi mobile untuk pengelolaan tugas.",
-        link: "https://example.com/mobile-app"
+        description: "Desain Website Villa",
+        link: "https://radenmohamadwildan.github.io/WebsiteVilla/"
     },
     "Desain Gambar": {
         description: "Proyek desain grafis untuk berbagai keperluan.",

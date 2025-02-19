@@ -156,7 +156,7 @@ header nav ul li a:hover {
 }
 
 .card img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border-radius: 4px;
     margin-bottom: 1rem;
@@ -341,10 +341,10 @@ button.view-btn:hover, a.view-btn:hover {
 
 .kontak form {
     background: #2c3e50;
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 400px;
-    width: 100%;
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
